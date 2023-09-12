@@ -1,66 +1,71 @@
-﻿public class Media
+﻿namespace TD1;
+public class Media
 {
-    private String Titre { get; set; }
+    public String Titre { get; set; }
 
-    private int NumeroDeReference { get; set; }
+    public int NumeroDeReference { get; set; }
     
-    private int NbExemplaireDisponible { get; set; }
+    public int NombreExemplairesDisponibles { get; set; }
 
     public Media()
     {
         Titre = string.Empty;
         NumeroDeReference = 0;
-        NbExemplaireDisponible = 0;
+        NombreExemplairesDisponibles = 0;
         
     }
+    
+    public static Media operator +(Media media, int nombreAjout)
+    {
+        // Vérifiez que le nombre d'ajout est positif
+        if (nombreAjout < 0)
+        {
+            throw new ArgumentException("Le nombre d'ajout doit être positif ou nul.");
+        }
+
+        // Mettez à jour le nombre d'exemplaires disponibles
+        media.NombreExemplairesDisponibles += nombreAjout;
+
+        return media;
+    }
+    
+    public static Media operator -(Media media, int nombreRetrait)
+    {
+        // Vérifiez que le nombre de retrait est positif
+        if (nombreRetrait < 0)
+        {
+            throw new ArgumentException("Le nombre de retrait doit être positif ou nul.");
+        }
+
+        // Vérifiez si le nombre de retrait est supérieur au nombre d'exemplaires disponibles
+        if (nombreRetrait > media.NombreExemplairesDisponibles)
+        {
+            throw new InvalidOperationException("Le nombre de retrait est supérieur au nombre d'exemplaires disponibles.");
+        }
+
+        // Mettez à jour le nombre d'exemplaires disponibles
+        media.NombreExemplairesDisponibles -= nombreRetrait;
+
+        return media;
+    }
+
+
     
     // Constructeur surchargé pour initialiser les propriétés lors de la création d'un objet Media
     public Media(string titre, int numeroReference, int nombreExemplairesDisponibles)
     {
         Titre = titre;
-        NumeroReference = numeroReference;
+        NumeroDeReference = numeroReference;
         NombreExemplairesDisponibles = nombreExemplairesDisponibles;
     }
 
     
 
-}
 
-public class Livre : Media
-{
-    // Propriété spécifique aux livres
-    public string Auteur { get; set; }
 
-    // Constructeur surchargé pour les livres
-    public Livre(string titre, int numeroReference, int nombreExemplairesDisponibles, string auteur)
-        : base(titre, numeroReference, nombreExemplairesDisponibles)
-    {
-        Auteur = auteur;
-    }
-}
 
-public class DVD : Media
-{
-    // Propriété spécifique aux DVD
-    public int Duree { get; set; }
 
-    // Constructeur surchargé pour les DVD
-    public DVD(string titre, int numeroReference, int nombreExemplairesDisponibles, int duree)
-        : base(titre, numeroReference, nombreExemplairesDisponibles)
-    {
-        Duree = duree;
-    }
-}
 
-public class CD : Media
-{
-    // Propriété spécifique aux CD
-    public string Artiste { get; set; }
 
-    // Constructeur surchargé pour les CD
-    public CD(string titre, int numeroReference, int nombreExemplairesDisponibles, string artiste)
-        : base(titre, numeroReference, nombreExemplairesDisponibles)
-    {
-        Artiste = artiste;
-    }
+
 }
