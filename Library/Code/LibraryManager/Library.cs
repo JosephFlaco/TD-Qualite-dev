@@ -1,4 +1,7 @@
-namespace TD1;
+using LibraryData.Code;
+using LibraryData.Code.Medias;
+
+namespace TD1.Code.LibraryManager;
 
 using System;
 using System.Collections.Generic;

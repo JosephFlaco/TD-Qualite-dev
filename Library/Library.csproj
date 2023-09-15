@@ -8,4 +8,9 @@
         <RootNamespace>TD1</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\LibraryData\LibraryData.csproj" />
+    </ItemGroup>
+
+
 </Project>

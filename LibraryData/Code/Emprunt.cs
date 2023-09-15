@@ -1,4 +1,6 @@
-namespace TD1;
+using LibraryData.Code.Medias;
+
+namespace LibraryData.Code;
 
 public class Emprunt
 {

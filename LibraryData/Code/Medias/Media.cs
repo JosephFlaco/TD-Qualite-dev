@@ -1,4 +1,4 @@
-﻿namespace TD1;
+﻿namespace LibraryData.Code.Medias;
 public class Media
 {
     public String Titre { get; set; }

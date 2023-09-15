@@ -1,4 +1,6 @@
-namespace TD1;
+using LibraryData.Code.Medias;
+
+namespace LibraryData.Code.Medias;
 
 public class Livre : Media
 {
