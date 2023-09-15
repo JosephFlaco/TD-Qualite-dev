@@ -41,6 +41,7 @@ public class Library
         {
             return medias.Find(media => media.NumeroDeReference == numeroReference);
         }
+        
     }
     // Méthode pour emprunter un média de la bibliothèque
     public void EmprunterMedia(Media media, string utilisateur)
@@ -48,11 +49,9 @@ public class Library
         if (media.NombreExemplairesDisponibles > 0)
         {
             media.NombreExemplairesDisponibles--;
-            Emprunt emprunt = new Emprunt
-            {
-                MediaEmprunte = media,
-                Utilisateur = utilisateur
-            };
+            Emprunt emprunt = new Emprunt(media, utilisateur);
+                
+           
             emprunts.Add(emprunt);
             Console.WriteLine($"Le média '{media.Titre}' a été emprunté par {utilisateur}.");
         }

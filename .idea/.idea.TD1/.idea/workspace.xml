@@ -8,23 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a00a648-cef9-45c7-9d7a-3b80ac6dec87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TD1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD1/CD.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD1/DVD.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD1/Emprunt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD1/Library.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TD1/Livre.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TD1/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TD1/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TD1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TD1.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Media.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TD1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TD1/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="4a00a648-cef9-45c7-9d7a-3b80ac6dec87" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../TD1\exportToHTML" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,7 +96,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1694537083643</updated>
-      <workItem from="1694537085658" duration="3708000" />
+      <workItem from="1694537085658" duration="4093000" />
     </task>
     <servers />
   </component>
